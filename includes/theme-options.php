@@ -19,7 +19,9 @@ add_action( 'admin_enqueue_scripts', 'yoko_admin_enqueue_scripts' );
 // Default options values
 $yoko_options = array(
 	'custom_color' => '#009BC2',
-	'custom_logo' => ''
+	'custom_logo' => '',
+        'custom_header_text_right' => '',
+        'custom_header_text_left' => ''
 );
 
 if ( is_admin() ) : // Load only if we are viewing an admin page
@@ -84,6 +86,18 @@ function yoko_theme_options_page() {
 	<br/><img style="margin-top: 10px;" src="<?php echo (get_option('custom_logo')) ? get_option('custom_logo') : get_template_directory_uri() . '/images/logo.png' ?>" />
 	</td>
 	</tr>
+<!-- RHOK MOD -->
+	<tr valign="top"><th scope="row"><label for="custom_header_text_right">Right header text</label></th>
+	<td>
+	<textarea cols="50" rows="10" id="custom_header_text_right" name="yoko_options[custom_header_text_right]"  ><?php  esc_attr_e($settings['custom_header_text_right']); ?></textarea>
+	</td>
+	</tr>
+	<tr valign="top"><th scope="row"><label for="custom_header_text_left">Left header text</label></th>
+	<td>
+	<textarea cols="50" rows="10" id="custom_header_text_left" name="yoko_options[custom_header_text_left]"  ><?php  esc_attr_e($settings['custom_header_text_left']); ?></textarea>
+	</td>
+	</tr>
+<!-- </RHOK MOD> -->
 	</table>
 
 	<p class="submit"><input type="submit" class="button-primary" value="<?php _e('Save Options', 'yoko'); ?>" /></p>
