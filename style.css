@@ -1,12 +1,12 @@
 /*
-Theme Name: Yoko
-Theme URI: http://www.elmastudio.de/wordpress-themes/yoko/
-Description: Yoko is a modern three-column blog theme. A responsive layout optimizes the theme for mobile devices like tablet pcs and modern smartphones (the layout switches to a two- or one-column layout depending on the screen size the theme is viewed on). To make your blog post more flexible you can use different kinds of post formats such as gallery, image, video, aside, link or quotes. To customize the theme you can choose your own background, link color, logo and header image. Yoko also comes with a custom social links widget and shortcodes for text columns, info boxes and highlighted text.
+Theme Name: Rhoko
+Theme URI: https://github.com/finnp/rhoko/
+Description: Rhoko is an adaption of Yoko. Yoko is a modern three-column blog theme. A responsive layout optimizes the theme for mobile devices like tablet pcs and modern smartphones (the layout switches to a two- or one-column layout depending on the screen size the theme is viewed on). To make your blog post more flexible you can use different kinds of post formats such as gallery, image, video, aside, link or quotes. To customize the theme you can choose your own background, link color, logo and header image. Yoko also comes with a custom social links widget and shortcodes for text columns, info boxes and highlighted text.
 
-Author: Elmastudio
-Author URI: http://www.elmastudio.de/wordpress-themes/
-Version: 1.0.5
-Tags: light, three-columns, right-sidebar, flexible-width, custom-colors, custom-header, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
+Author: Finn Pauls (Original by Elmastudio)
+Author URI: http://www.finnpauls.de
+Version: 1.0.0
+Tags: rhok, light, three-columns, right-sidebar, flexible-width, custom-colors, custom-header, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
 
 License: GNU/GPL Version 2 or later
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -15,6 +15,77 @@ License URI: http://www.gnu.org/licenses/gpl.html
 /* Google Fonts Import
 --------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold|Droid+Serif:regular,italic,bold,bolditalic&subset=latin);
+
+/* Header Texts
+--------------------------------------------- */
+/* Original from http://rhok.be
+   Licence: GNU/GPL 
+   Adapted by: Finn Pauls
+*/
+.abouttext
+{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 6px 17px 4px 12px;
+	position: absolute;
+	right: 16px;
+	top: 8%;
+	width: 360px;
+}
+.abouttext h2
+{
+	color: white;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.abouttext a
+{
+	color: #ED1C24!important;
+	display: block;
+	margin-top: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.abouttext a:hover
+{
+	text-decoration: underline;
+}
+.eventinfo
+{
+	color: #fff!important;
+	font-size: 18px;
+	font-weight: 600;
+	left: 90px;
+	padding: 6px 17px 4px 12px;
+	position: absolute;
+	top: 5%;
+	width: 360px;
+}
+.eventinfo .small-header
+{
+	color: #ED1C24!important;
+	display: block;
+	font-size: 14px;
+}
+.eventinfo .date
+{
+	display: block;
+	font-size: 42px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.eventinfo a
+{
+	color: #FFF!important;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.eventinfo a:hover
+{
+	text-decoration: underline;
+}
 
 /* Reset
 --------------------------------------------- */
