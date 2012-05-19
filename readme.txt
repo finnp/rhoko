@@ -1,9 +1,15 @@
 ------------------------------------------------------------------------------------------------------------
-For a detailed documentation and support please visit: http://www.elmastudio.de/wordpress-themes/yoko/
+For a detailed documentation of and support of Yoko please visit: http://www.elmastudio.de/wordpress-themes/yoko/
 ------------------------------------------------------------------------------------------------------------
 
+Changelog of Rhoko:
+------------------------------------------------------------------------------------------------------------
+Version 1.0.0 - 19th May 2012
+--------------------------------
+- Reduced the header height
+- Added two text boxes for the header from  rhok.be
 
-Changelog:
+Changelog of Yoko:
 ------------------------------------------------------------------------------------------------------------
 
 Version 1.0.5 - 21th August 2011
