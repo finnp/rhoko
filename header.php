@@ -59,9 +59,14 @@
 				( /* $src, $width, $height */ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'post-thumbnail' ) ) &&
 				$image[1] >= HEADER_IMAGE_WIDTH ) :
 				// Houston, we have a new header image!
-						echo get_the_post_thumbnail( $post->ID , array(1102,350), array('class' => 'headerimage'));
+						echo get_the_post_thumbnail( $post->ID , array(1102,200), array('class' => 'headerimage'));
 						elseif ( get_header_image() ) : ?>
-						<img src="<?php header_image(); ?>" class="headerimage" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" /><!-- end headerimage -->
+                <!-- RHOK MOD -->
+          <div style="position: relative;">
+                <div class="eventinfo"> <?php echo $yoko_settings['custom_header_text_left']; ?> </div>
+                <div class="abouttext">	<?php echo $yoko_settings['custom_header_text_right']; ?> </div>
+                <!-- </RHOK MOD> -->
+						<img src="<?php header_image(); ?>" class="headerimage" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" /><!-- RHOK MOD --></div><!-- </RHOK MOD> --><!-- end headerimage -->
 					<?php endif; ?>
 					<div class="clear"></div>
 					
