@@ -66,7 +66,7 @@ function yoko() {
 	// The height and width of your custom header. You can hook into the theme's own filters to change these values.
 	// Add a filter to yoko_header_image_width and yoko_header_image_height to change these values.
 	define( 'HEADER_IMAGE_WIDTH', apply_filters( 'yoko_header_image_width', 1102 ) );
-	define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'yoko_header_image_height', 350 ) );
+	define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'yoko_header_image_height', 200 ) );
 
 	// We'll be using post thumbnails for custom header images on posts and pages.
 	// We want them to be 940 pixels wide by 350 pixels tall.
@@ -566,5 +566,6 @@ $googleplus_title = empty($instance['googleplus_title']) ? ' ' : apply_filters('
 }
 // register Yoko SocialLinks Widget
 add_action('widgets_init', create_function('', 'return register_widget("Yoko_SocialLinks_Widget");'));
+
 
 
