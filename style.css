@@ -25,13 +25,15 @@ License URI: http://www.gnu.org/licenses/gpl.html
 .abouttext
 {
 	color: #fff;
-	font-size: 18px;
+	font-size: 1em;
 	font-weight: 600;
 	padding: 6px 17px 4px 12px;
 	position: absolute;
 	right: 16px;
 	top: 8%;
-	width: 360px;
+	width: 30%;
+	height: 80%;
+	overflow: hidden;
 }
 .abouttext h2
 {
@@ -54,13 +56,15 @@ License URI: http://www.gnu.org/licenses/gpl.html
 .eventinfo
 {
 	color: #fff!important;
-	font-size: 18px;
+	font-size: 1em;
 	font-weight: 600;
 	left: 90px;
 	padding: 6px 17px 4px 12px;
 	position: absolute;
 	top: 5%;
-	width: 360px;
+	width: 30%;
+	height: 80%;
+	overflow: hidden;
 }
 .eventinfo .small-header
 {
@@ -1430,6 +1434,11 @@ nav#subnav ul.menu li.menu-item ul.sub-menu li.menu-item a {
 	padding: 0 20px 20px;
 	background-color:#fff;
 }
+/* --- Don't show header text on smartphone --- */
+.abouttext, .eventinfo
+{
+	display: none;
+}
 /* --- Header --- */
 #site-title {
 	float: left;
@@ -1444,6 +1453,7 @@ nav#subnav ul.menu li.menu-item ul.sub-menu li.menu-item a {
 	margin: 0;
 	text-align: center;
 }
+
 /* --- Main Nav --- */
 #branding #mainnav {
 	margin: 15px 0 0;
