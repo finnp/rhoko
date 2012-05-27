@@ -61,7 +61,7 @@ function yoko() {
 	// Your changeable header business starts here
 	define( 'HEADER_TEXTCOLOR', '' );
 	// No CSS, just IMG call. The %s is a placeholder for the theme template directory URI.
-	define( 'HEADER_IMAGE', '%s/images/headers/ginko.jpg' );
+	define( 'HEADER_IMAGE', '%s/images/headers/rhok-standard.png' );
 
 	// The height and width of your custom header. You can hook into the theme's own filters to change these values.
 	// Add a filter to yoko_header_image_width and yoko_header_image_height to change these values.
@@ -84,41 +84,11 @@ function yoko() {
 
 	// Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
 	register_default_headers( array(
-			'ginko' => array(
-			'url' => '%s/images/headers/ginko.jpg',
-			'thumbnail_url' => '%s/images/headers/ginko-thumbnail.jpg',
+			'rhok-standard' => array(
+			'url' => '%s/images/headers/rhok-standard.png',
+			'thumbnail_url' => '%s/images/headers/rhok-standard-thumbnail.png',
 			/* translators: header image description */
-			'description' => __( 'Ginko', 'yoko' )
-			),
-			'flowers' => array(
-			'url' => '%s/images/headers/flowers.jpg',
-			'thumbnail_url' => '%s/images/headers/flowers-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Flowers', 'yoko' )
-			),
-			'plant' => array(
-			'url' => '%s/images/headers/plant.jpg',
-			'thumbnail_url' => '%s/images/headers/plant-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Plant', 'yoko' )
-			),
-			'sailing' => array(
-			'url' => '%s/images/headers/sailing.jpg',
-			'thumbnail_url' => '%s/images/headers/sailing-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Sailing', 'yoko' )
-			),
-			'cape' => array(
-			'url' => '%s/images/headers/cape.jpg',
-			'thumbnail_url' => '%s/images/headers/cape-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Cape', 'yoko' )
-			),
-			'seagull' => array(
-			'url' => '%s/images/headers/seagull.jpg',
-			'thumbnail_url' => '%s/images/headers/seagull-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Seagull', 'yoko' )
+			'description' => __( 'Rhok Standard', 'yoko' )
 			)
 	) );
 }
@@ -566,6 +536,7 @@ $googleplus_title = empty($instance['googleplus_title']) ? ' ' : apply_filters('
 }
 // register Yoko SocialLinks Widget
 add_action('widgets_init', create_function('', 'return register_widget("Yoko_SocialLinks_Widget");'));
+
 
 
 
