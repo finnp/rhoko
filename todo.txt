@@ -1,4 +1,0 @@
-TODO
-
-- Change Default headers to the RHOK header, maybe add some more rhok headers
-- Work on iPhone/iPad CSS for the text boxes
